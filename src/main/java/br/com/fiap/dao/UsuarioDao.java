@@ -23,7 +23,7 @@ public class UsuarioDao {
 
     public void insert(Usuario usuario) throws SQLException {
         PreparedStatement stm = conexao.prepareStatement("INSERT INTO T_USUARIO" +
-                " (nm_usuario, sobrenome_usuario, dt_nasc_usuario, email_usuairo, senha_usuario)" +
+                " (nm_usuario, sobrenome_usuario, dt_nasc_usuario, email_usuario, senha_usuario)" +
                 " VALUES (?, ?, ?, ?, ?)");
         stm.setString(1, usuario.getNm_usuario());
         stm.setString(2, usuario.getSobrenome_usuario());
@@ -47,7 +47,7 @@ public class UsuarioDao {
         int cod = result.getInt("cd_usuario");
         String nome = result.getString("nm_usuario");
         String sobrenome = result.getString("sobrenome_usuario");
-        LocalDate dataNascimento = LocalDate.parse(result.getDate("dt_nasc_usuario").toString(), DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+        LocalDate dataNascimento = LocalDate.parse(result.getDate("dt_nasc_usuario").toString(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         String emailUsuario = result.getString("email_usuario");
         String senhaUsuario = result.getString("senha_usuario");
         return new Usuario(cod, nome, sobrenome, dataNascimento, emailUsuario, senhaUsuario);
