@@ -5,6 +5,8 @@ import br.com.fiap.model.Usuario;
 
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,21 +17,26 @@ public class UsuarioView {
         UsuarioDao dao;
         try {
             dao = new UsuarioDao();
+            //testarCadastro(dao);
+            listar(dao);
         } catch (SQLException e) {
             System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
         }
     }
 
     private static void testarCadastro(UsuarioDao dao) {
-        Usuario usuario1 = new Usuario("Usuario1", "Sobrenome Usuario1", LocalDate.parse(new Date().toString()),
+        // create a formatter
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String dtNasc = "10-12-1995";
+        Usuario usuario1 = new Usuario("Usuario1", "Sobrenome Usuario1",  LocalDate.parse(dtNasc, formatter),
                 "usuario.1@usuario.com", "usuario154321");
-        Usuario usuario2 = new Usuario("Usuario2", "Sobrenome Usuario2", LocalDate.parse(new Date().toString()),
+        Usuario usuario2 = new Usuario("Usuario2", "Sobrenome Usuario2", LocalDate.parse(dtNasc, formatter),
                 "usuario.2@usuario.com", "usuario278945");
-        Usuario usuario3 = new Usuario("Usuario3", "Sobrenome Usuario3", LocalDate.parse(new Date().toString()),
+        Usuario usuario3 = new Usuario("Usuario3", "Sobrenome Usuario3", LocalDate.parse(dtNasc, formatter),
                 "usuario.3@usuario.com", "usuario341575");
-        Usuario usuario4 = new Usuario("Usuario4", "Sobrenome Usuario4", LocalDate.parse(new Date().toString()),
+        Usuario usuario4 = new Usuario("Usuario4", "Sobrenome Usuario4", LocalDate.parse(dtNasc, formatter),
                 "usuario.4@usuario.com", "usuario154321");
-        Usuario usuario5 = new Usuario("Usuario5", "Sobrenome Usuario5", LocalDate.parse(new Date().toString()),
+        Usuario usuario5 = new Usuario("Usuario5", "Sobrenome Usuario5", LocalDate.parse(dtNasc, formatter),
                 "usuario.5@usuario.com", "usuario578923");
         listaUsuarios.add(usuario1);
         listaUsuarios.add(usuario2);
