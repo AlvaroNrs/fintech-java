@@ -49,8 +49,8 @@ public class TipoContaView {
         try {
             listaTiposContas = dao.getAll();
             System.out.println("Lista de contas: ");
-            for (TipoConta accoutType : listaTiposContas) {
-                System.out.println(accoutType.getCd_tipo_conta() + " - " + accoutType.getTipo_conta());
+            for (TipoConta accountType : listaTiposContas) {
+                System.out.println(accountType.getCd_tipo_conta() + " - " + accountType.getTipo_conta());
             }
         } catch (SQLException e) {
             System.err.println("Erro ao listar tipos de contas: " + e.getMessage());
