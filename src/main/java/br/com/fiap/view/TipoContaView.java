@@ -56,5 +56,4 @@ public class TipoContaView {
             System.err.println("Erro ao listar tipos de contas: " + e.getMessage());
         }
     }
-
 }
