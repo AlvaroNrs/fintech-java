@@ -10,7 +10,7 @@ public class ConnectionFactory {
     private static final String USUARIO = "RM557504";
     private static final String SENHA = "290188";
 
-    // Método para obter uma conexão com o banco de dados
+    // Metodo para obter uma conexão com o banco de dados
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USUARIO, SENHA);
     }

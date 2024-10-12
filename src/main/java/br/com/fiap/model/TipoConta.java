@@ -1,7 +1,9 @@
 package br.com.fiap.model;
 
 public class TipoConta {
+
     private int cd_tipo_conta;
+
     private String tipo_conta;
 
     public TipoConta(int cd_tipo_conta, String tipo_conta) {
