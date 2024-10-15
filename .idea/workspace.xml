@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5eb13-4f83-43cc-b7bd-1d2eab64c10a" name="Changes" comment="Adição de classes e métodos para Transferencia">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/ServicoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/TipoInvestimentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Servico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/TipoInvestimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/ServicoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoInvestimentoView.java" afterDir="false" />
+    <list default="true" id="15a5eb13-4f83-43cc-b7bd-1d2eab64c10a" name="Changes" comment="Adição de classes e métodos para Tipo de Investimento e Serviço">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/InvestimentoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/TipoRecebimentoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Investimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/TipoRecebimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/InvestimentoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoRecebimentoView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoContaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoContaView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,33 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CadastroProdutoView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ContaView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TipoContaView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TipoInvestimentoView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TransferenciaView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UsuarioView.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev-alvaro&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Documents/FIAP/Conteúdos/Fase 6/Entregas/Cap 11/ProjetoBanco&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.CadastroProdutoView.executor": "Run",
+    "Application.ContaView.executor": "Run",
+    "Application.InvestimentoView.executor": "Run",
+    "Application.ServicoView.executor": "Run",
+    "Application.TipoContaView.executor": "Run",
+    "Application.TipoInvestimentoView.executor": "Run",
+    "Application.TipoRecebimentoView.executor": "Run",
+    "Application.TransferenciaView.executor": "Run",
+    "Application.UsuarioView.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev-alvaro",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/Desktop/manipulacao_arquivos-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -114,7 +116,9 @@
       <workItem from="1728483003432" duration="1982000" />
       <workItem from="1728491778564" duration="12000" />
       <workItem from="1728578006571" duration="1544000" />
-      <workItem from="1728584131727" duration="482000" />
+      <workItem from="1728584131727" duration="1057000" />
+      <workItem from="1728601089850" duration="26000" />
+      <workItem from="1729016835123" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="Ajuste no UsuarioView de exemplo">
       <option name="closed" value="true" />
@@ -156,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728484987584</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adição de classes e métodos para Tipo de Investimento e Serviço">
+      <option name="closed" value="true" />
+      <created>1728584751611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728584751611</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +218,7 @@
     <MESSAGE value="Adição de classes e métodos para Tipo de Conta" />
     <MESSAGE value="Adição de classes e métodos para Conta" />
     <MESSAGE value="Adição de classes e métodos para Transferencia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição de classes e métodos para Transferencia" />
+    <MESSAGE value="Adição de classes e métodos para Tipo de Investimento e Serviço" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adição de classes e métodos para Tipo de Investimento e Serviço" />
   </component>
 </project>
