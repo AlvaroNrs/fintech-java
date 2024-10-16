@@ -16,6 +16,6 @@
 
 <p>*Isto além de:</p>
 <ul>
-  <li>Rodar o script de criação do Banco de Dados na pasta raiz do projeto</li>
-  <li>Alterar o usuário e a senha na classe ConnectionFactory)</li>
+  <li>Rodar o script de criação do Banco de Dados (ele está na pasta raiz do projeto)</li>
+  <li>Alterar o usuário e a senha para conexão com o Bando de Dados (na classe ConnectionFactory)</li>
 </ul>
