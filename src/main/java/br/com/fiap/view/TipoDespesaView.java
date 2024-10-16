@@ -1,7 +1,6 @@
 package br.com.fiap.view;
 
 import br.com.fiap.dao.TipoDespesaDao;
-import br.com.fiap.dao.TipoInvestimentoDao;
 import br.com.fiap.model.TipoDespesa;
 import java.sql.SQLException;
 import java.util.ArrayList;
