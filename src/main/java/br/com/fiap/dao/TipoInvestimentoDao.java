@@ -2,11 +2,8 @@ package br.com.fiap.dao;
 
 import br.com.fiap.factory.ConnectionFactory;
 import br.com.fiap.model.TipoInvestimento;
-import br.com.fiap.model.Transferencia;
 
 import java.sql.*;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
