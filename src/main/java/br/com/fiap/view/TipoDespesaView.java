@@ -16,7 +16,7 @@ public class TipoDespesaView {
         try {
             dao = new TipoDespesaDao ();
             //testarCadastro(dao);
-            //listar(dao);
+            listar(dao);
         } catch (SQLException e) {
             System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
         }
@@ -25,10 +25,10 @@ public class TipoDespesaView {
 
     private static void testarCadastro(TipoDespesaDao dao) {
         TipoDespesa TipoDespesa1 = new TipoDespesa(1, "Aluguel");
-        TipoDespesa TipoDespesa2 = new TipoDespesa(2,"CDB");
-        TipoDespesa TipoDespesa3 = new TipoDespesa(3,"Ações");
-        TipoDespesa TipoDespesa4 = new TipoDespesa(4,"Imóveis");
-        TipoDespesa TipoDespesa5 = new TipoDespesa(5,"Tesouro Direto");
+        TipoDespesa TipoDespesa2 = new TipoDespesa(2,"Compras");
+        TipoDespesa TipoDespesa3 = new TipoDespesa(3,"Conserto do Carro");
+        TipoDespesa TipoDespesa4 = new TipoDespesa(4,"Viagem");
+        TipoDespesa TipoDespesa5 = new TipoDespesa(5,"Reforma");
         listaTiposDespesas.add(TipoDespesa1);
         listaTiposDespesas.add(TipoDespesa2);
         listaTiposDespesas.add(TipoDespesa3);

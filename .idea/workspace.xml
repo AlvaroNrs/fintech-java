@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5eb13-4f83-43cc-b7bd-1d2eab64c10a" name="Changes" comment="Adição de classes e métodos para Tipo de Investimento e Serviço">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/InvestimentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/TipoRecebimentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Investimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/TipoRecebimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/InvestimentoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoRecebimentoView.java" afterDir="false" />
+    <list default="true" id="15a5eb13-4f83-43cc-b7bd-1d2eab64c10a" name="Changes" comment="Adição de classes e métodos para Investimento e Tipo de Recebimento">
+      <change afterPath="$PROJECT_DIR$/Banco_Fintech.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/DespesaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Despesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/DespesaView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/TipoDespesaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/dao/TipoDespesaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoDespesaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/view/TipoDespesaView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
     "Application.InvestimentoView.executor": "Run",
     "Application.ServicoView.executor": "Run",
     "Application.TipoContaView.executor": "Run",
+    "Application.TipoDespesaView.executor": "Run",
     "Application.TipoInvestimentoView.executor": "Run",
     "Application.TipoRecebimentoView.executor": "Run",
     "Application.TransferenciaView.executor": "Run",
@@ -72,9 +73,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "dev-alvaro",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/Desktop/manipulacao_arquivos-main",
+    "last_opened_file_path": "C:/Users/USER/Documents/FIAP/Conteúdos/Fase 6/Entregas/Cap 11/ProjetoBanco",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +87,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\FIAP\Conteúdos\Fase 6\Entregas\Cap 11\ProjetoBanco" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -219,6 +225,7 @@
     <MESSAGE value="Adição de classes e métodos para Conta" />
     <MESSAGE value="Adição de classes e métodos para Transferencia" />
     <MESSAGE value="Adição de classes e métodos para Tipo de Investimento e Serviço" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição de classes e métodos para Tipo de Investimento e Serviço" />
+    <MESSAGE value="Adição de classes e métodos para Investimento e Tipo de Recebimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adição de classes e métodos para Investimento e Tipo de Recebimento" />
   </component>
 </project>

@@ -39,8 +39,8 @@ public class TipoDespesaDao {
     }
 
     private TipoDespesa parseTipoDespesa(ResultSet result) throws SQLException {
-        int cod = result.getInt("cd_despesa");
-        String cdTipoDespesa = result.getString ("cd_tipo_despesa");
+        int cod = result.getInt("cd_tipo_despesa");
+        String cdTipoDespesa = result.getString ("tipo_despesa");
         return new TipoDespesa(cod, cdTipoDespesa);
     }
 
