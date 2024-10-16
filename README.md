@@ -1,5 +1,4 @@
 # fintech-java
-
 <h2>Ordem de cadastro das classes segundo nossa modelagem de dados*:</h2>,
 <ul>
 <li>ViewUsuário</li>
